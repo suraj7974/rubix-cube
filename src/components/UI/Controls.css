@@ -1,0 +1,137 @@
+/* Controls component styling */
+.controls {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Light/dark mode variants */
+.controls.light {
+  background-color: white;
+  color: #333;
+}
+
+.controls.dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+/* Timer display styling */
+.timer-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.timer {
+  font-size: 3rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #718096;
+}
+
+.timer.running {
+  color: #38a169;
+}
+
+.timer.solved {
+  color: #3182ce;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.scramble-button {
+  background-color: #805ad5;
+  color: white;
+}
+
+.reset-button {
+  background-color: #319795;
+  color: white;
+}
+
+.theme-button {
+  background-color: transparent;
+  border: 1px solid #cbd5e0;
+  display: flex;
+  align-items: center;
+}
+
+.controls.light .theme-button {
+  color: #1a202c;
+}
+
+.controls.dark .theme-button {
+  color: #e2e8f0;
+  border-color: #4a5568;
+}
+
+/* Stats container styling */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  padding: 0.5rem;
+  text-align: center;
+  min-width: 100px;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Status badge styling */
+.status-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.status-badge {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.status-badge.solving {
+  background-color: #ed8936;
+  color: white;
+}
+
+.status-badge.solved {
+  background-color: #38a169;
+  color: white;
+}
